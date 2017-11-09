@@ -1,0 +1,76 @@
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+address {
+  font-style: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+figure > img {
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+li {
+  > ul,
+  > ol {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+nav li, nav ol {
+  display: inline-block;
+}
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  &[href^='#'], &:not([href]) {
+    color: $brand-color;
+  }
+
+  &:visited {
+    color: darken($brand-color, 15%);
+  }
+
+  &:hover, &:focus {
+    color: darken($brand-color, 10%);
+  }
+}
+
+input {
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  zoom: 1;
+  border: 0;
+}

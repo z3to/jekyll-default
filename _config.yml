@@ -1,0 +1,16 @@
+title: A wonderful project
+description: >-
+  A truly wonderful new project
+baseurl: ""
+url: "http://google.com"
+twitter_username: jekyllrb
+github_username:  jekyll
+lang: en
+
+markdown: kramdown
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-last-modified-at
+  - jekyll-sitemap
